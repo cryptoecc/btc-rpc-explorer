@@ -15,8 +15,8 @@
     "bitcoinECC",
     "blockchain"
   ],
-  "author": "Dan Janosik <dan@47.io>",
-  "license": "BSD",
+  "author": "Dan Janosik <dan@47.io> and forked by jonghong",
+  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paaabx3/btc-rpc-explorer.git"
