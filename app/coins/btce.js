@@ -45,7 +45,7 @@ var currencyUnits = [
 		multiplier:"eur",
 		values:["eur"],
 		decimalPlaces:2,
-		symbol:"
+		symbol:"€"
 	},
 ];
 
