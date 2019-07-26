@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "description": "Explorer for BitcoinECC and RPC-compatible blockchains",
   "private": false,
-  "bin": "bin/cli.js",
+  "bin": {
+    "btce-rpc-explorer": "bin/cli.js"
+  },
   "scripts": {
-    "start": "node ./bin/www",
-    "refresh-mining-pool-configs": "node ./bin/refresh-mining-pool-configs.js"
+    "start": "node ./bin/www"
   },
   "keywords": [
     "bitcoin",
@@ -14,8 +15,8 @@
     "bitcoinECC",
     "blockchain"
   ],
-  "author": "Dan Janosik <dan@47.io> and forked by JongHong Chae",
-  "license": "MIT",
+  "author": "Dan Janosik <dan@47.io>",
+  "license": "BSD",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paaabx3/btc-rpc-explorer.git"
@@ -52,5 +53,9 @@
   "devDependencies": {
     "less": "3.8.0",
     "npm-run-all": "^4.1.5"
+  },
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
   }
 }
