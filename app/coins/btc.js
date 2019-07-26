@@ -244,7 +244,7 @@ module.exports = {
 
 				return exchangeRates;
 			}
-			
+
 			return null;
 		}
 	},
