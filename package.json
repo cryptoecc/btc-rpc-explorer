@@ -1,7 +1,7 @@
 {
-  "name": "btc-rpc-explorer",
-  "version": "1.0.3",
-  "description": "Explorer for Bitcoin and RPC-compatible blockchains",
+  "name": "btce-rpc-explorer",
+  "version": "0.0.1",
+  "description": "Explorer for BitcoinECC and RPC-compatible blockchains",
   "private": false,
   "bin": "bin/cli.js",
   "scripts": {
@@ -11,13 +11,14 @@
   "keywords": [
     "bitcoin",
     "litecoin",
+    "bitcoinECC",
     "blockchain"
   ],
-  "author": "Dan Janosik <dan@47.io>",
+  "author": "Dan Janosik <dan@47.io> and forked by JongHong Chae",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janoside/btc-rpc-explorer.git"
+    "url": "git+https://github.com/paaabx3/btc-rpc-explorer.git"
   },
   "dependencies": {
     "async": "2.6.2",
