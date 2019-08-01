@@ -45,7 +45,7 @@ var currencyUnits = [
 		multiplier:"eur",
 		values:["eur"],
 		decimalPlaces:2,
-		symbol:"
+		symbol:"€"
 	},
 ];
 
@@ -66,19 +66,37 @@ module.exports = {
 	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
 
 	//all the same GenesisBlockHash
+	//amount : 50 btce, 499900000 satoshi, 1DCBDE60
+	//amount(hex) : 60DECB1D00000000
+	//https://bitcoin.stackexchange.com/questions/57942/in-manual-raw-tx-creation-how-do-you-specify-the-amount-of-the-bitcoin-to-be-se
+	/*
+
+	01000000 - version
+	01 - #of inputs
+	0000000000000000000000000000000000000000000000000000000000000000 - previous hash
+	ffffffff - previous tx index
+	04ffff001d0104475468652054696d65732032342f4d61702f323031392054686572657361204d6179206162616e646f6e7320706c616e20666f7220766f7465206f6e204272657869742062696c6c scriptsig
+	ffffffff - sequence
+	01 - #of output
+	60DECB1D00000000 - output amount
+	4104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac p2pkh scriptpubkey
+	00000000 - locktime
+
+	*/
+
 	genesisBlockHash: "6cb5897daa6e48a1e00e71d926f1db1794dd247dd1388b8eacea432dd2199373",
 	genesisCoinbaseTransactionId: "15d2f927fe3eafe88ce0b4ccf267727ed306295051339a16e0b95067e65bead8",
 	genesisCoinbaseTransaction: {
-		"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff0804ffff001d02fd04ffffffff0100f2052a01000000434104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac00000000",
+		"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff04ffff001d0104475468652054696d65732032342f4d61702f323031392054686572657361204d6179206162616e646f6e7320706c616e20666f7220766f7465206f6e204272657869742062696c6cffffffff0160DECB1D000000004104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac00000000",
 		"txid": "15d2f927fe3eafe88ce0b4ccf267727ed306295051339a16e0b95067e65bead8",
 		"hash": "15d2f927fe3eafe88ce0b4ccf267727ed306295051339a16e0b95067e65bead8",
-		"size": 204,
-		"vsize": 204,
+		"size": 287,
+		"vsize": 287,
 		"version": 1,
-		"confirmations":475000,
+		"confirmations":1,
 		"vin": [
 			{
-				"coinbase": "04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73",
+				"coinbase": "04ffff001d0104475468652054696d65732032342f4d61702f323031392054686572657361204d6179206162616e646f6e7320706c616e20666f7220766f7465206f6e204272657869742062696c6c",
 				"sequence": 4294967295
 			}
 		],
@@ -87,19 +105,19 @@ module.exports = {
 				"value": 50,
 				"n": 0,
 				"scriptPubKey": {
-					"asm": "04f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446a OP_CHECKSIG",
-					"hex": "4104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac",
+					"asm": "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f OP_CHECKSIG",
+					"hex": "4104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac",
 					"reqSigs": 1,
 					"type": "pubkey",
 					"addresses": [
-						"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"
+						"2N6qNzJGNmuoA2KLxPvwTXvXMdEHnrAfH2r"
 					]
 				}
 			}
 		],
-		"blockhash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-		"time": 1230988505,
-		"blocktime": 1230988505
+		"blockhash": "6cb5897daa6e48a1e00e71d926f1db1794dd247dd1388b8eacea432dd2199373",
+		"time": 1558627231,
+		"blocktime": 1558627231
 	},
 	genesisCoinbaseOutputAddressScripthash:"8b01df4e368ea28f8dc0423bcf7a4923e3a12d307c875e47a0cfbf90b5c39161",
 	exchangeRateData:{
