@@ -7,7 +7,7 @@ var currencyUnits = [
 		name:"BTCE",
 		multiplier:1,
 		default:true,
-		values:["", "btcee", "BTCEE"],
+		values:["", "btce", "BTCE"],
 		decimalPlaces:8
 	},
 	{
@@ -58,7 +58,7 @@ module.exports = {
 	demoSiteUrl: "https://btc.chaintools.io",
 
 	maxBlockWeight: 4000000,
-	targetBlockTimeSeconds: 600,
+	targetBlockTimeSeconds: 60,
 	currencyUnits:currencyUnits,
 	currencyUnitsByName:{"BTCE":currencyUnits[0], "mBTCE":currencyUnits[1], "bitce":currencyUnits[2], "btceshi":currencyUnits[3]},
 	baseCurrencyUnit:currencyUnits[3],
@@ -87,7 +87,7 @@ module.exports = {
 	genesisBlockHash: "b77abb03a0a8a4f23a7380bf655af8312c4769c64fcbf335a08d598b13368f22",
 	genesisCoinbaseTransactionId: "15d2f927fe3eafe88ce0b4ccf267727ed306295051339a16e0b95067e65bead8",
 	genesisCoinbaseTransaction: {
-		"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff04ffff001d0104475468652054696d65732032342f4d61702f323031392054686572657361204d6179206162616e646f6e7320706c616e20666f7220766f7465206f6e204272657869742062696c6c42949672950160DECB1D000000004104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac00000000",
+		"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff04ffff001d0104475468652054696d65732032342f4d61702f323031392054686572657361204d6179206162616e646f6e7320706c616e20666f7220766f7465206f6e204272657869742062696c6cffffffffff0160DECB1D000000004104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac00000000",
 		"txid": "15d2f927fe3eafe88ce0b4ccf267727ed306295051339a16e0b95067e65bead8",
 		"hash": "15d2f927fe3eafe88ce0b4ccf267727ed306295051339a16e0b95067e65bead8",
 		"size": 287,
@@ -110,7 +110,7 @@ module.exports = {
 					"reqSigs": 1,
 					"type": "pubkey",
 					"addresses": [
-						"2MvwXYY9uTNRc5YEVV94iLCW2ZwrMntVfqE"
+						"38u1XefedDntA4TrAGPiTWD81sdEj3uXPd"
 					]
 				}
 			}
