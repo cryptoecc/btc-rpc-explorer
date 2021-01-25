@@ -45,15 +45,15 @@ var currencyUnits = [
 		multiplier:"eur",
 		values:["eur"],
 		decimalPlaces:2,
-		symbol:"
+		symbol:""
 	},
 ];
 
 module.exports = {
 	name:"BitcoinECC",
 	ticker:"BTCE",
-	logoUrl:"/img/logo/btce.svg",
-	siteTitle:"BitcoinECC Explorer",
+	logoUrl:"/img/logo/LV.png",
+	siteTitle:"GIST LV TESTNET",
 	nodeTitle:"BitcoinECC Full Node",
 	demoSiteUrl: "https://btc.chaintools.io",
 
